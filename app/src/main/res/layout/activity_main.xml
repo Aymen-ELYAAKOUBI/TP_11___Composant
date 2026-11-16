@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tp_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Custom Circular Score View -->
+    <com.example.tp_11___composant.CircularScoreView
+        android:id="@+id/circularScoreView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:score="75"
+        app:maxScore="100"
+        app:ringColor="#E0E0E0"
+        app:progressColor="#3F51B5"
+        app:textColor="#333333"
+        app:textSize="28sp"
+        app:strokeWidth="20dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button to increment score -->
+    <Button
+        android:id="@+id/btnIncrementScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/increment_score"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Custom Rating Bar View -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evaluate_component"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <com.example.tp_11___composant.RatingBarView
+        android:id="@+id/ratingBarView"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        app:maxRating="5"
+        app:rating="4"
+        app:starColorActive="#FFC107"
+        app:starColorInactive="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvRatingResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : 4 / 5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5" />
+
+</LinearLayout>

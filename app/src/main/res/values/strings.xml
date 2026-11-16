@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TP_11___Composant</string>
+    <string name="tp_title">TP 11: Composants Personnalisés</string>
+    <string name="increment_score">Incrémenter le Score (+10)</string>
+    <string name="evaluate_component">Évaluez ce composant :</string>
+    <string name="rating_format">Note : %d / %d</string>
+</resources>
